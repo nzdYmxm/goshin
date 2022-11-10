@@ -9,7 +9,7 @@ import (
 	genshinapi "github.com/darylhjd/genshin-api"
 )
 
-func testBuild() {
+func TestBuild() {
 	characters, err := genshinapi.GetCharacters()
 	if err == nil {
 		rand.Seed(time.Now().Unix())
