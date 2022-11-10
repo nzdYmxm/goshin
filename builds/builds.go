@@ -13,7 +13,7 @@ func TestBuild() {
 	characters, err := genshinapi.GetCharacters()
 	if err == nil {
 		rand.Seed(time.Now().Unix())
-		fmt.Println("Your character for test build is %s", characters[rand.Int()%len(characters)])
+		fmt.Println("Your character for test build is", characters[rand.Int()%len(characters)])
 	} else {
 		log.Fatal(err)
 	}
